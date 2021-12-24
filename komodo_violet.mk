@@ -9,11 +9,11 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common.mk)
 IS_PHONE := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := voltage_violet
+PRODUCT_NAME := komodo_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -30,7 +30,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Voltage OS Official
-VOLTAGE_BUILD_TYPE := OFFICIAL
 
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
