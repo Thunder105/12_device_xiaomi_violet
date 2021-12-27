@@ -8,6 +8,10 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
+# Komodo
+KOMODO_OFFICIAL := true
+KOMODO_BUILD_TYPE := OFFICIAL
+
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/komodo/config/common.mk)
 IS_PHONE := true
