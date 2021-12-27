@@ -12,6 +12,11 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 IS_PHONE := true
 
+# Pixel Extended 
+PEX_BUILD_TYPE := OFFICIAL
+PEX_MAINTAINER := Hariprakash
+org.pex.build_maintainer := Hariprakash
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
